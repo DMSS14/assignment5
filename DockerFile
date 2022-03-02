@@ -1,0 +1,5 @@
+FROM java:8
+WORKDIR /target
+COPY fibServer*.jar fibServer.jar
+EXPOSE 8082
+CMD java -jar fibSerber.jar 8082
