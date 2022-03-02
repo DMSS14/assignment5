@@ -46,7 +46,7 @@ public class Main {
 			}
 			boolean full = false;
 			try {
-				full = query.get("full").equals("true");
+				full = !query.get("full").isEmpty();
 			}
 			catch(Exception e) {
 			}
