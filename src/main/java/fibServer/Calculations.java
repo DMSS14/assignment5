@@ -5,7 +5,7 @@ public class Calculations {
 	 * For testing purposes ONLY, NOT THREAD SAFE.
 	 */
 	static void clearCache() {
-			cache = new long[] {0,1};
+			cache = new long[] {1,1};
 	}
 	static long[] getCache() {
 		synchronized(cacheLock) {
@@ -14,7 +14,7 @@ public class Calculations {
 	}
 	public static final int MAX_NUMBER = 92;
 	private static Object cacheLock = new Object();
-	private static long[] cache = new long[] {0,1};
+	private static long[] cache = new long[] {1,1};
 	public static long[] getFibNums(int number) {
 		long[] numbers = new long[number+1];
 		for(int i = 0; i<= number; i++) {
